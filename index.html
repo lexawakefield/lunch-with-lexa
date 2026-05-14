@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch with Lexa — Own Your Hour</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #fafaf8;
+      --ink: #1a1a1a;
+      --muted: #6b6b6b;
+      --line: #e8e6e1;
+      --pink: #e8417a;
+      --orange: #f08531;
+      --purple: #7a3ec9;
+      --purple-soft: #ece2f7;
+      --blue: #2e7dd1;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, sans-serif;
+      line-height: 1.65;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .gradient-bar {
+      height: 6px;
+      background: linear-gradient(90deg, var(--pink) 0%, var(--orange) 35%, var(--purple) 70%, var(--blue) 100%);
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 96px 28px 120px;
+    }
+
+    .hero {
+      margin-bottom: 80px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: clamp(44px, 7vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    h1 .accent {
+      background: linear-gradient(90deg, var(--pink) 0%, var(--orange) 35%, var(--purple) 70%, var(--blue) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .updated {
+      font-size: 15px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+      color: var(--ink);
+    }
+
+    p {
+      font-size: 17px;
+      margin-bottom: 18px;
+      color: #2a2a2a;
+    }
+
+    .section {
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section:last-of-type {
+      border-bottom: none;
+      background: var(--purple-soft);
+      padding: 40px 32px;
+      border-radius: 14px;
+      margin-top: 8px;
+    }
+
+    .pullquote {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: clamp(22px, 2.6vw, 26px);
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin: 8px 0 8px;
+      padding: 4px 0 4px 24px;
+      border-left: 3px solid;
+      border-image: linear-gradient(180deg, var(--pink), var(--orange), var(--purple), var(--blue)) 1;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .tag {
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
+    footer p {
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 1px;
+      transition: opacity 0.15s;
+    }
+
+    footer a:hover {
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-bar"></div>
+  <div class="container">
+    <header class="hero">
+      <div class="eyebrow">Lunch with Lexa</div>
+      <h1>Own <span class="accent">your hour.</span></h1>
+      <div class="updated">A right-now page · May 2026</div>
+    </header>
+
+    <section class="section">
+      <h2>What I'm up to</h2>
+      <p>I'm rediscovering my passion for fitness training. Pursuing my CPT with NASM and a Group Fitness Certification with AFAA. About to start teaching F45 classes, and I used to instruct cycling — so stepping back into a class room feels a little like coming home.</p>
+      <p>A lot of this comeback is happening because I had to quit running, which I love. I have a genetic condition, and there's a good chance I'll need a major surgery that would mean learning to walk again.</p>
+
+      <div class="pullquote">
+        So instead of letting it flatten me, I'm finding joy in new movement and getting as strong as I possibly can.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What's next</h2>
+      <p>I'm working through nutrition certifications too. The bigger plan is to build something around coaching and wellness — helping people reclaim their agency when life tries to push them down. I'm especially fired up about helping people break through their limiting beliefs.</p>
+      <p>I think our bodies are the best tools we have to teach our brains new skills.</p>
+
+      <div class="tags">
+        <span class="tag">NASM CPT</span>
+        <span class="tag">AFAA GFC</span>
+        <span class="tag">F45</span>
+        <span class="tag">Nutrition</span>
+        <span class="tag">Coaching</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>If any of this resonates, I'd love to hear from you. <a href="mailto:lexawakefield@gmail.com">lexawakefield@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
